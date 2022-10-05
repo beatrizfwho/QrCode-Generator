@@ -5,6 +5,12 @@
     padding: 0px;
 }
 
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #407BFF;
@@ -12,6 +18,10 @@ body {
 }
 
 .ilustração {
+    width: 300px;
+}
+
+#QrCodeImg {
     width: 300px;
 }
 
@@ -28,6 +38,10 @@ body {
     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
     100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.form {
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -60,6 +74,10 @@ button:active {
     transform: translateY(-1px);
 }
 
+h1, p {
+    color: rgb(24, 22, 22);
+}
+
 h1 {
     padding: 15px 0px 8px 0px;
 }
@@ -73,6 +91,7 @@ input {
     padding: 10px 15px;
     border-radius: 10px;
     border: 3px solid transparent;
+    font-size: 1.125rem;
 }
 
 input:focus {
@@ -83,4 +102,24 @@ input:focus {
 
 img {
     padding: 20px 0px;
+}
+
+
+@media (max-width: 600px) {
+    .ilustração {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        line-height: 32px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    #QrCodeImg {
+        width: 300px;
+    }
 }
